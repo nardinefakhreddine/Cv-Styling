@@ -1,0 +1,386 @@
+body{
+width:100%;
+}
+/* start header css*/
+
+header div{
+    
+    margin-left: 80px;
+    margin-right: 80px;
+}
+header div hgroup h1{
+    border-bottom: 1px solid 
+    #d7d8da;
+    
+    padding: 10px;
+}
+ header div hgroup h2 {
+    display: none;
+}
+header div figure img{
+    position: absolute;
+    top:15px;
+    left: 700px;
+    transform: rotate(-15deg);
+}
+@media(max-width:500px){
+    header div figure img{
+        display: none;
+    }
+}
+/*end header css*/
+
+/*start content css*/
+
+.content{
+   
+    margin-left: 80px;
+}
+section h3{
+    border-right: 1px solid 
+    #d7d8da;
+   
+}
+
+/*end content css*/
+/*start about css*/
+#about{
+    width:600px;
+    margin: 0px;
+    
+}
+#about h3{
+display: none;
+}
+#about p{
+    color:grey;
+    word-spacing: 10px;
+    white-space: wrap;
+    font-style: italic;
+}
+/*end about css*/
+
+
+
+/*start competencies css*/
+
+
+
+
+#competencies h3{grid-area: title;}
+.skills-primary{ grid-area: skill1;
+
+}
+.skills-secondary{ grid-area:skill2;}
+#competencies {
+    display:grid;
+    grid-template-areas:
+  
+    'title skill1 skill1'
+    'title skill2 skill2 ';
+    width: 500px;
+    margin-bottom: 100px;
+}
+#competencies h3{
+    display: inline-block;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+    }
+    
+.skills{
+    display: flex;
+    margin-left: 10px;
+}
+.skill{
+    padding: 5px;
+    margin-right: 10px;
+    width: 110px;
+   margin-top: 10px;
+        background-color: #40817a;
+        color:white;
+        height: 20px;
+    
+}
+[data-skill="5"]::after{
+    content:"\2605 \2605 \2605";
+    float: right;
+    
+
+}
+ .skills-secondary  [data-skill="5"]::after{
+    content:"\2605 \2605 \2605";
+    float: right;
+    font-size: 10px;
+    margin-top:5px;
+
+    
+
+}
+[data-skill="3"]::after{
+    content:"\2605 \2605 ";
+  
+    float: right;
+
+}
+[data-skill="1"]::after{
+    content:"\2605 ";
+    float: right;
+  
+
+}
+[data-skill="9"]::after{
+    content:"\2605 \2605 \2605 \2605 \2605";
+    float: right;
+    font-size: 10px;
+    margin-top:5px;
+
+}
+[data-skill="7"]::after{
+    content:"\2605 \2605 \2605 \2605";
+    float: right;
+    font-size: 10px;
+    margin-top:5px;
+
+}
+@media(max-width:500px){
+
+    #competencies{
+        display: flex;
+        flex-direction: column;
+    }
+    #competencies h3{
+        display: inline-block;
+        border-bottom:1px solid  #d7d8da;
+        border-right:none;
+        height: 30px;
+        width: 150px;
+       
+    }
+}
+
+
+/*end competencies css*/
+/*start experiences css*/
+#experiences #education{
+
+margin-bottom: 100px;
+}
+#experiences h3{
+    grid-area:experience-title;
+    display: inline-block;
+height: 450;
+padding: 0px;
+
+
+width: 150px;
+}
+
+#experiences:nth-child(2){
+    grid-area: exp1;
+    margin-top: 10px;
+   
+    }
+    
+ 
+#experiences:nth-child(3){
+    grid-area: exp2;
+    ;
+   
+}
+
+#experiences{
+    display: grid;
+    grid-template-areas: 'experience-title exp1' 
+                        'experience-title exp2';
+}
+.experience{
+        
+    height: 200px;
+    margin-bottom: 10px;
+   margin-right: 80px;
+   width: 900px;
+    
+    
+}
+.experience-type{
+    color: #40817a;
+}
+.experience-institution{
+    display: none;
+}
+.experience-details{
+    float: right;
+    color:grey;
+    position: relative;
+top:-40px;
+
+}
+@media(max-width:500px){
+
+    #experiences{
+        display: flex;
+        flex-direction: column;
+    }
+    #experiences h3{
+        display: inline-block;
+        border-bottom:1px solid  #d7d8da;
+        border-right:none;
+        height: 30px;
+        width: 150px;
+       
+    }
+}
+
+/*end experiences css*/
+/*start education css*/
+
+#education h3{
+    grid-area:experience-title;
+    display: inline-block;
+height: 450;
+padding: 0px;
+
+
+width: 150px;
+}
+
+
+
+#experiences h3{
+    grid-area:experience-title;
+    display: inline-block;
+height: 450;
+padding: 0px;
+
+
+width: 150px;
+}
+
+#education:nth-child(2){
+    grid-area: exp1;
+    margin-top: 10px;
+   
+    }
+    
+ 
+#education:nth-child(3){
+    grid-area: exp2;
+    ;
+   
+}
+
+#education{
+    display: grid;
+    grid-template-areas: 'experience-title exp1' 
+                        'experience-title exp2';
+}
+@media(max-width:500px){
+    #education{
+        display: flex;
+        flex-direction: column;
+    }
+    #education h3{
+        display: inline-block;
+        border-bottom:1px solid  #d7d8da;
+        border-right:none;
+        height: 30px;
+        width: 150px;
+       
+    }
+}
+
+
+
+
+/*end education css*/
+/*start hobbies css*/
+#hobbies{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+#hobbies h3{
+    display: inline-block;
+    width: 150px;
+}
+@media(max-width:500px){
+    #hobbies{
+        
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #hobbies h3{
+      
+            display: inline-block;
+            border-bottom:1px solid  #d7d8da;
+            border-right:none;
+            height: 30px;
+            width: 150px;
+           
+        }
+        
+    
+}
+/*end hobbies css*/
+/*start contact css*/
+#contact{
+    margin-top: 100px;
+    margin-left: 150px;
+    width: 300px;
+}
+#contact h3{
+    display: none;
+}
+.contacts dl{
+    padding: 10px;
+}
+.contacts dt{
+    display: none;
+}
+.contacts .contact-value{
+    display: none;
+} 
+.contacts{
+    display: grid;
+   grid-template-columns: 50px 50px 50px 50px;
+   grid-gap: 10px;
+}
+.contact-skype{
+    display:none;
+}
+.contact-email{
+    content:url(../images/email.png);
+    width: 50px;
+    height: 50px;;
+}
+.contact-phone{
+    content:url(../images/phone.png);
+    width: 50px;
+    height: 50px;
+}
+.contact-github{
+    content:url(../images/github.png);
+    width: 50px;
+    height: 50px;
+}
+.contact-facebook{
+    content:url(../images/facebook.png);
+    width: 50px;
+    height: 50px;
+}
+@media(max-width:500px){
+    #contact{
+        margin-left:20px;
+      
+      
+}
+.contact-facebook{
+   position: absolute;
+   left:100px;
+  top:1800px;
+
+}
+}
+/*end contact css*/
