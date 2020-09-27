@@ -1,0 +1,218 @@
+body{
+
+font-family: 'Roboto', sans-serif;
+
+font-size: 15px;
+}
+
+/**start header css*/
+header {
+    background-color:#a6a6a4;
+   
+
+}
+header div{
+    display: flex;
+     margin-left: 80px;
+}
+header div hgroup {
+    color:red;
+}
+@media screen and (max-width:500px){
+header div{
+    display: block;
+    margin-left: 5px;
+}
+
+}
+/*end header css*/
+
+
+
+/* start content css*/
+.content   {
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: 500px 600px;
+  
+}
+
+.content section h3{
+    font-weight:900;
+   border-bottom: 1px solid #d7d8da;
+   
+}
+
+/*end content css*/
+
+
+
+/*start experiences css*/
+.experience .experience-type{
+    color: red;
+     font-family: 'Archivo Black', sans-serif;
+     font-family: 'Roboto', sans-serif;
+    font-family: 'Secular One', sans-serif;
+}
+.experience .experience-institution::before{
+    content: "@";
+    color: red;
+    font-weight: lighter;
+   
+}
+.experience .experience-institution{
+    font-weight: lighter;
+    color: red;
+   
+}
+.experience-location::before{
+    content:"In";
+    color: #7f8084;
+
+}
+.experience-details{
+    color: #7f8084;
+    
+    
+}
+.experience-date-separator{
+    color: red;
+}
+
+/*end experiences css*/
+
+
+/*start competencies css*/
+
+.skills-primary::before{
+    content:"Main";
+    
+}
+.skills-secondary::before{
+    content: "Other";
+   
+}
+.skill{
+    background-color: #afb2b7;
+  
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.skill span{
+    background-color: red;
+    color: white;
+}
+[data-skill="5"] span {
+    background-color: red;
+    color: white; 
+    display:inline-block;
+    width: 50%;
+    padding: 5px;
+}
+[data-skill="3"] span {
+    background-color: red;
+    color: white; 
+    display:inline-block;
+    width: 30%;
+    padding: 5px;
+}
+[data-skill="1"] span {
+    background-color: red;
+    color: white; 
+    display:inline-block;
+    width: 10%;
+    padding: 5px;
+}
+[data-skill="9"] span {
+    background-color: red;
+    color: white; 
+    display:inline-block;
+    width: 90%;
+    padding: 5px;
+}
+[data-skill="7"] span {
+    background-color: red;
+    color: white; 
+    display:inline-block;
+    width: 70%;
+    padding: 5px;
+}
+/*end competencies  css*/
+
+
+
+/*start contact css*/
+#contact{
+    position: absolute;
+    left: 80px;
+    bottom: -1000px;
+    width: 100%;
+}
+.contacts dl {
+width: 100%;
+overflow: hidden;
+padding: 0;
+margin: 0;
+
+}
+.contacts dl dt{
+  float: left;
+  width:30%;
+  padding: 2%;
+  margin: 0;
+  color: white;
+  background-color: red;
+
+}
+.contacts  .contact-value {
+  float: left;
+ width: 50%;
+  padding:2%;
+  margin: 0;
+  
+}
+
+.contacts  .contact-value a{
+    text-decoration: none;
+    color: red;
+    font-weight:bold;
+}
+
+@media screen and (min-width:600px){
+    #contact h3{
+        visibility: hidden;
+        
+    }
+    #contact{
+        position:absolute;
+        top:-80px;
+        left: 700px;
+        
+      
+    }
+    .contacts  .contact-value {
+       background-color: black;
+       width: 450px;
+       padding: 5px;
+       margin: 0;
+        
+      }
+      .contacts dl {
+          width: 800px;
+          
+      }
+      .contacts dl dt{
+width: 150px;
+padding: 5px;
+margin: 0;
+
+      }}
+section h3:before{
+   
+        content: ' \25CF';
+        font-size: 40px;
+        color:red;
+      
+}
+
+/*end contact css*/
